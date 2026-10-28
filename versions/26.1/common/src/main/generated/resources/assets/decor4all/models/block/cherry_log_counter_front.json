@@ -1,0 +1,10 @@
+{
+  "parent": "decor4all:block/models/counter_model_front",
+  "textures": {
+    "log": "minecraft:block/cherry_log",
+    "log_top": "minecraft:block/cherry_log_top",
+    "stripped_log": "minecraft:block/stripped_cherry_log",
+    "stripped_log_top": "minecraft:block/stripped_cherry_log_top",
+    "particle": "minecraft:block/cherry_log"
+  }
+}

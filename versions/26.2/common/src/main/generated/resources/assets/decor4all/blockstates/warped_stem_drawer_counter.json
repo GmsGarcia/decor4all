@@ -1,0 +1,117 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "decor4all:block/warped_stem_drawer_counter"
+      },
+      "when": {
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/warped_stem_drawer_counter_filler_left"
+      },
+      "when": {
+        "facing": "north",
+        "left": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/warped_stem_drawer_counter_filler_right"
+      },
+      "when": {
+        "facing": "north",
+        "right": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/warped_stem_drawer_counter",
+        "y": 90
+      },
+      "when": {
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/warped_stem_drawer_counter_filler_left",
+        "y": 90
+      },
+      "when": {
+        "facing": "east",
+        "left": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/warped_stem_drawer_counter_filler_right",
+        "y": 90
+      },
+      "when": {
+        "facing": "east",
+        "right": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/warped_stem_drawer_counter",
+        "y": 180
+      },
+      "when": {
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/warped_stem_drawer_counter_filler_left",
+        "y": 180
+      },
+      "when": {
+        "facing": "south",
+        "left": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/warped_stem_drawer_counter_filler_right",
+        "y": 180
+      },
+      "when": {
+        "facing": "south",
+        "right": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/warped_stem_drawer_counter",
+        "y": 270
+      },
+      "when": {
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/warped_stem_drawer_counter_filler_left",
+        "y": 270
+      },
+      "when": {
+        "facing": "west",
+        "left": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/warped_stem_drawer_counter_filler_right",
+        "y": 270
+      },
+      "when": {
+        "facing": "west",
+        "right": "true"
+      }
+    }
+  ]
+}
