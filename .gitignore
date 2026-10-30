@@ -28,6 +28,11 @@ bin/
 
 *.DS_Store
 
-# fabric
+# runtime files
 
 run/
+runs/
+
+# prism / loom dev runtime dirs
+versions/*/*/runs/
+logs/

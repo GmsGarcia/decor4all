@@ -24,5 +24,5 @@ A clear and concise description of what you expected to happen.
 If applicable, add screenshots to help explain your problem.
 
 **Information (please complete the following information):**
- - Minecraft Version: [e.g. 1.18.2]
- - Mod Version: [decor4fabric v1.1]
+ - Minecraft Version: [e.g. 26.3]
+ - Mod Version: [decor4all v2.0.0]
