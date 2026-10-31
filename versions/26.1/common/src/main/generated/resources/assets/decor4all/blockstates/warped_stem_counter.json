@@ -60,6 +60,28 @@
     },
     {
       "apply": {
+        "model": "decor4all:block/warped_stem_counter_filler_left_front"
+      },
+      "when": {
+        "facing": "north",
+        "front": "true",
+        "right": "true",
+        "left": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/warped_stem_counter_filler_right_front"
+      },
+      "when": {
+        "facing": "north",
+        "front": "true",
+        "left": "true",
+        "right": "false"
+      }
+    },
+    {
+      "apply": {
         "model": "decor4all:block/warped_stem_counter",
         "y": 90
       },
@@ -124,6 +146,30 @@
     },
     {
       "apply": {
+        "model": "decor4all:block/warped_stem_counter_filler_left_front",
+        "y": 90
+      },
+      "when": {
+        "facing": "east",
+        "front": "true",
+        "right": "true",
+        "left": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/warped_stem_counter_filler_right_front",
+        "y": 90
+      },
+      "when": {
+        "facing": "east",
+        "front": "true",
+        "left": "true",
+        "right": "false"
+      }
+    },
+    {
+      "apply": {
         "model": "decor4all:block/warped_stem_counter",
         "y": 180
       },
@@ -188,6 +234,30 @@
     },
     {
       "apply": {
+        "model": "decor4all:block/warped_stem_counter_filler_left_front",
+        "y": 180
+      },
+      "when": {
+        "facing": "south",
+        "front": "true",
+        "right": "true",
+        "left": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/warped_stem_counter_filler_right_front",
+        "y": 180
+      },
+      "when": {
+        "facing": "south",
+        "front": "true",
+        "left": "true",
+        "right": "false"
+      }
+    },
+    {
+      "apply": {
         "model": "decor4all:block/warped_stem_counter",
         "y": 270
       },
@@ -248,6 +318,30 @@
         "facing": "west",
         "front": "true",
         "right": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/warped_stem_counter_filler_left_front",
+        "y": 270
+      },
+      "when": {
+        "facing": "west",
+        "front": "true",
+        "right": "true",
+        "left": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/warped_stem_counter_filler_right_front",
+        "y": 270
+      },
+      "when": {
+        "facing": "west",
+        "front": "true",
+        "left": "true",
+        "right": "false"
       }
     }
   ]

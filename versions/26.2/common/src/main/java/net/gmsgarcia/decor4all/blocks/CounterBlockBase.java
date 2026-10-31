@@ -130,7 +130,11 @@ public abstract class CounterBlockBase extends WaterloggedFacingBlock {
                 minZ = 1.0D; maxZ = 16.0D;
         }
 
-        if (joinsInFront(state)) {
+        Direction leftDir = facing.getClockWise();
+        Direction rightDir = facing.getCounterClockWise();
+        boolean joinsFront = joinsInFront(state);
+
+        if (joinsFront) {
             switch (facing) {
                 case NORTH:
                     minZ = 0.0D;
@@ -149,17 +153,14 @@ public abstract class CounterBlockBase extends WaterloggedFacingBlock {
             }
         }
 
-        Direction leftDir = facing.getClockWise();
-        Direction rightDir = facing.getCounterClockWise();
-
-        if (left) {
+        if (left || (joinsFront && right)) {
             if (leftDir.getAxis() == Direction.Axis.X) {
                 if (leftDir == Direction.EAST) maxX = 16.0D; else minX = 0.0D;
             } else {
                 if (leftDir == Direction.SOUTH) maxZ = 16.0D; else minZ = 0.0D;
             }
         }
-        if (right) {
+        if (right || (joinsFront && left)) {
             if (rightDir.getAxis() == Direction.Axis.X) {
                 if (rightDir == Direction.EAST) maxX = 16.0D; else minX = 0.0D;
             } else {

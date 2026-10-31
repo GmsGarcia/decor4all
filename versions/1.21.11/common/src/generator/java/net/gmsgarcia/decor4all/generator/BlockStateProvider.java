@@ -5,6 +5,7 @@ import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import net.gmsgarcia.decor4all.Decor4All;
 import net.gmsgarcia.decor4all.generator.Catalogue.BlockFacts;
 import net.gmsgarcia.decor4all.generator.Catalogue.Family;
 import net.gmsgarcia.decor4all.generator.Catalogue.ModelRef;
@@ -164,6 +165,10 @@ final class BlockStateProvider {
                 parts.add(part(ModelRef.rotated(fillerRight + variant, rot),
                         ordered("facing", facing, "front", front, "right", "true")));
             }
+            parts.add(part(ModelRef.rotated(fillerLeft + "_front", rot),
+                    ordered("facing", facing, "front", "true", "right", "true", "left", "false")));
+            parts.add(part(ModelRef.rotated(fillerRight + "_front", rot),
+                    ordered("facing", facing, "front", "true", "left", "true", "right", "false")));
         }
 
         return Json.obj("multipart", parts);
@@ -198,11 +203,38 @@ final class BlockStateProvider {
     }
 
     private static void assertCounter(BlockFacts facts, Map<String, Object> document) {
-        int expected = facts.family() == Family.COUNTER ? 24 : 12;
+        boolean corners = facts.family() == Family.COUNTER;
+        int expected = corners ? 32 : 12;
         List<Object> parts = parts(document);
         if (parts.size() != expected) {
             throw new IllegalStateException(facts.path() + ": expected " + expected
                     + " multipart entries, got " + parts.size());
+        }
+        if (corners) {
+            assertCounterCorners(facts, parts);
+        }
+    }
+
+    private static void assertCounterCorners(BlockFacts facts, List<Object> parts) {
+        for (String facing : Catalogue.DIRECTIONS) {
+            for (String joined : new String[] {"left", "right"}) {
+                String closed = joined.equals("left") ? "right" : "left";
+                String model = Decor4All.MOD_ID + ":block/" + facts.path()
+                        + "_filler_" + closed + "_front";
+                boolean declared = parts.stream().anyMatch(part -> {
+                    Map<String, Object> clause = when(part);
+                    return facing.equals(clause.get("facing"))
+                            && "true".equals(clause.get("front"))
+                            && "true".equals(clause.get(joined))
+                            && "false".equals(clause.get(closed))
+                            && model.equals(apply(part).get("model"));
+                });
+                if (!declared) {
+                    throw new IllegalStateException(facts.path() + ": facing=" + facing
+                            + " with front and " + joined + " must close " + closed
+                            + " with " + model);
+                }
+            }
         }
     }
 
