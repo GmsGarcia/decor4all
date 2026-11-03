@@ -153,6 +153,12 @@ final class ModelProvider {
                 Json.obj("parent", "decor4all:block/models/counter_filler_left_front", "textures", stripped));
         out.put("models/block/" + path + "_filler_right_front.json",
                 Json.obj("parent", "decor4all:block/models/counter_filler_right_front", "textures", stripped));
+        out.put("models/block/" + path + "_corner_left.json",
+                Json.obj("parent", "decor4all:block/models/counter_corner_left", "textures", textures));
+        out.put("models/block/" + path + "_corner_right.json",
+                Json.obj("parent", "decor4all:block/models/counter_corner_right", "textures", textures));
+        out.put("models/block/" + path + "_corner_both.json",
+                Json.obj("parent", "decor4all:block/models/counter_corner_both", "textures", textures));
         out.put("models/item/" + path + ".json",
                 Json.obj("parent", "decor4all:block/" + path));
         out.put("items/" + path + ".json", itemDefinition(facts));

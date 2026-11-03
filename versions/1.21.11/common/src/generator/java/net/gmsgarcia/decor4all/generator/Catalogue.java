@@ -49,7 +49,7 @@ final class Catalogue {
                 case SMALL_STOOL -> Set.of("facing", "wool_color");
                 case TABLE, FENCE -> Set.of("north", "east", "south", "west");
                 case FENCE_GATE -> Set.of("facing", "in_wall", "open");
-                case COUNTER -> Set.of("facing", "left", "right", "front");
+                case COUNTER -> Set.of("facing", "left", "right", "front", "corner");
                 case DRAWER_COUNTER, CABINET_COUNTER -> Set.of("facing", "left", "right");
             };
         }

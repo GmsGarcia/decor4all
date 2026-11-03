@@ -99,6 +99,6 @@ public class CabinetBlockEntity extends BlockEntity implements Container, MenuPr
 
     @Override
     public AbstractContainerMenu createMenu(int containerId, Inventory playerInventory, Player player) {
-        return new ChestMenu(MenuType.GENERIC_3x3, containerId, playerInventory, this, 3);
+        return new ChestMenu(MenuType.GENERIC_9x3, containerId, playerInventory, this, 3);
     }
 }

@@ -93,7 +93,7 @@ public final class DecorBlocks {
     public static final List<Entry> ALL = buildAll();
 
     static {
-        int expected = 121 + 45 + 33;
+        int expected = 121 + 45 + 66;
         if (ALL.size() != expected) {
             throw new IllegalStateException("block catalogue has " + ALL.size()
                     + " entries, expected " + expected);
@@ -192,24 +192,29 @@ public final class DecorBlocks {
         }
 
         for (Wood wood : woods) {
-            out.add(counter(wood));
-            out.add(drawerCounter(wood));
-            out.add(cabinetCounter(wood));
+            out.add(counter(wood, false));
+            out.add(drawerCounter(wood, false));
+            out.add(cabinetCounter(wood, false));
+        }
+        for (Wood wood : woods) {
+            out.add(counter(wood, true));
+            out.add(drawerCounter(wood, true));
+            out.add(cabinetCounter(wood, true));
         }
     }
 
-    private static Entry counter(Wood wood) {
-        String path = wood.segment() + "_counter";
+    private static Entry counter(Wood wood, boolean stripped) {
+        String path = prefix(wood, stripped) + "_counter";
         return new Entry(path, BlockSpec.key(path), BlockFamilies.COUNTER, COUNTER_TAB, List.of());
     }
 
-    private static Entry drawerCounter(Wood wood) {
-        String path = wood.segment() + "_drawer_counter";
+    private static Entry drawerCounter(Wood wood, boolean stripped) {
+        String path = prefix(wood, stripped) + "_drawer_counter";
         return new Entry(path, BlockSpec.key(path), BlockFamilies.DRAWER_COUNTER, COUNTER_TAB, List.of());
     }
 
-    private static Entry cabinetCounter(Wood wood) {
-        String path = wood.segment() + "_cabinet_counter";
+    private static Entry cabinetCounter(Wood wood, boolean stripped) {
+        String path = prefix(wood, stripped) + "_cabinet_counter";
         return new Entry(path, BlockSpec.key(path), BlockFamilies.CABINET_COUNTER, COUNTER_TAB, List.of());
     }
 

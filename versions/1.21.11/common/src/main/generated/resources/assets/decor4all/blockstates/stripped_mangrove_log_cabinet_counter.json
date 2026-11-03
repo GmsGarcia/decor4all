@@ -1,0 +1,129 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_mangrove_log_cabinet_counter",
+        "uvlock": true
+      },
+      "when": {
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_mangrove_log_cabinet_counter_filler_left",
+        "uvlock": true
+      },
+      "when": {
+        "facing": "north",
+        "left": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_mangrove_log_cabinet_counter_filler_right",
+        "uvlock": true
+      },
+      "when": {
+        "facing": "north",
+        "right": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_mangrove_log_cabinet_counter",
+        "y": 90,
+        "uvlock": true
+      },
+      "when": {
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_mangrove_log_cabinet_counter_filler_left",
+        "y": 90,
+        "uvlock": true
+      },
+      "when": {
+        "facing": "east",
+        "left": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_mangrove_log_cabinet_counter_filler_right",
+        "y": 90,
+        "uvlock": true
+      },
+      "when": {
+        "facing": "east",
+        "right": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_mangrove_log_cabinet_counter",
+        "y": 180,
+        "uvlock": true
+      },
+      "when": {
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_mangrove_log_cabinet_counter_filler_left",
+        "y": 180,
+        "uvlock": true
+      },
+      "when": {
+        "facing": "south",
+        "left": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_mangrove_log_cabinet_counter_filler_right",
+        "y": 180,
+        "uvlock": true
+      },
+      "when": {
+        "facing": "south",
+        "right": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_mangrove_log_cabinet_counter",
+        "y": 270,
+        "uvlock": true
+      },
+      "when": {
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_mangrove_log_cabinet_counter_filler_left",
+        "y": 270,
+        "uvlock": true
+      },
+      "when": {
+        "facing": "west",
+        "left": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_mangrove_log_cabinet_counter_filler_right",
+        "y": 270,
+        "uvlock": true
+      },
+      "when": {
+        "facing": "west",
+        "right": "true"
+      }
+    }
+  ]
+}

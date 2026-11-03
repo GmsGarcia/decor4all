@@ -5,6 +5,7 @@ import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import net.gmsgarcia.decor4all.Decor4All;
 import net.gmsgarcia.decor4all.generator.Catalogue.BlockFacts;
 import net.gmsgarcia.decor4all.generator.Catalogue.Family;
 import net.gmsgarcia.decor4all.generator.Catalogue.ModelRef;
@@ -148,21 +149,28 @@ final class BlockStateProvider {
         for (String facing : Catalogue.DIRECTIONS) {
             int rot = Catalogue.rotationFor(facing);
             if (!corners) {
-                parts.add(part(ModelRef.rotated(base, rot), Map.of("facing", facing)));
-                parts.add(part(ModelRef.rotated(fillerLeft, rot), ordered("facing", facing, "left", "true")));
-                parts.add(part(ModelRef.rotated(fillerRight, rot), ordered("facing", facing, "right", "true")));
+                parts.add(part(ModelRef.locked(base, rot), Map.of("facing", facing)));
+                parts.add(part(ModelRef.locked(fillerLeft, rot), ordered("facing", facing, "left", "true")));
+                parts.add(part(ModelRef.locked(fillerRight, rot), ordered("facing", facing, "right", "true")));
                 continue;
             }
 
-            parts.add(part(ModelRef.rotated(base, rot), ordered("facing", facing, "front", "false")));
-            parts.add(part(ModelRef.rotated("block/" + facts.path() + "_front", rot),
-                    ordered("facing", facing, "front", "true")));
-            for (String front : new String[] {"false", "true"}) {
-                String variant = front.equals("true") ? "_front" : "";
-                parts.add(part(ModelRef.rotated(fillerLeft + variant, rot),
-                        ordered("facing", facing, "front", front, "left", "true")));
-                parts.add(part(ModelRef.rotated(fillerRight + variant, rot),
-                        ordered("facing", facing, "front", front, "right", "true")));
+            parts.add(part(ModelRef.locked(base, rot),
+                    ordered("facing", facing, "front", "false", "corner", "none")));
+            parts.add(part(ModelRef.locked(base + "_front", rot),
+                    ordered("facing", facing, "front", "true", "corner", "none")));
+            parts.add(part(ModelRef.locked(base + "_corner_left", rot),
+                    ordered("facing", facing, "corner", "left")));
+            parts.add(part(ModelRef.locked(base + "_corner_right", rot),
+                    ordered("facing", facing, "corner", "right")));
+            parts.add(part(ModelRef.locked(base + "_corner_both", rot),
+                    ordered("facing", facing, "corner", "both")));
+            for (String side : new String[] {"left", "right"}) {
+                String filler = "block/" + facts.path() + "_filler_" + side;
+                parts.add(part(ModelRef.locked(filler, rot),
+                        ordered("facing", facing, "front", "false", "corner", "none", side, "true")));
+                parts.add(part(ModelRef.locked(filler + "_front", rot),
+                        ordered("facing", facing, "front", "true", "corner", "none", side, "true")));
             }
         }
 
@@ -198,11 +206,33 @@ final class BlockStateProvider {
     }
 
     private static void assertCounter(BlockFacts facts, Map<String, Object> document) {
-        int expected = facts.family() == Family.COUNTER ? 24 : 12;
+        boolean corners = facts.family() == Family.COUNTER;
+        int expected = corners ? 36 : 12;
         List<Object> parts = parts(document);
         if (parts.size() != expected) {
             throw new IllegalStateException(facts.path() + ": expected " + expected
                     + " multipart entries, got " + parts.size());
+        }
+        if (corners) {
+            assertCounterCorners(facts, parts);
+        }
+    }
+
+    private static void assertCounterCorners(BlockFacts facts, List<Object> parts) {
+        for (String facing : Catalogue.DIRECTIONS) {
+            for (String corner : new String[] {"left", "right", "both"}) {
+                String model = Decor4All.MOD_ID + ":block/" + facts.path() + "_corner_" + corner;
+                boolean declared = parts.stream().anyMatch(part -> {
+                    Map<String, Object> clause = when(part);
+                    return facing.equals(clause.get("facing"))
+                            && corner.equals(clause.get("corner"))
+                            && model.equals(apply(part).get("model"));
+                });
+                if (!declared) {
+                    throw new IllegalStateException(facts.path() + ": facing=" + facing
+                            + " corner=" + corner + " must use " + model);
+                }
+            }
         }
     }
 

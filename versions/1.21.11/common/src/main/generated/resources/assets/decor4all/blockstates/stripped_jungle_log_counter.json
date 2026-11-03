@@ -1,0 +1,431 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_jungle_log_counter",
+        "uvlock": true
+      },
+      "when": {
+        "facing": "north",
+        "front": "false",
+        "corner": "none"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_jungle_log_counter_front",
+        "uvlock": true
+      },
+      "when": {
+        "facing": "north",
+        "front": "true",
+        "corner": "none"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_jungle_log_counter_corner_left",
+        "uvlock": true
+      },
+      "when": {
+        "facing": "north",
+        "corner": "left"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_jungle_log_counter_corner_right",
+        "uvlock": true
+      },
+      "when": {
+        "facing": "north",
+        "corner": "right"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_jungle_log_counter_corner_both",
+        "uvlock": true
+      },
+      "when": {
+        "facing": "north",
+        "corner": "both"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_jungle_log_counter_filler_left",
+        "uvlock": true
+      },
+      "when": {
+        "facing": "north",
+        "front": "false",
+        "corner": "none",
+        "left": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_jungle_log_counter_filler_left_front",
+        "uvlock": true
+      },
+      "when": {
+        "facing": "north",
+        "front": "true",
+        "corner": "none",
+        "left": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_jungle_log_counter_filler_right",
+        "uvlock": true
+      },
+      "when": {
+        "facing": "north",
+        "front": "false",
+        "corner": "none",
+        "right": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_jungle_log_counter_filler_right_front",
+        "uvlock": true
+      },
+      "when": {
+        "facing": "north",
+        "front": "true",
+        "corner": "none",
+        "right": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_jungle_log_counter",
+        "y": 90,
+        "uvlock": true
+      },
+      "when": {
+        "facing": "east",
+        "front": "false",
+        "corner": "none"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_jungle_log_counter_front",
+        "y": 90,
+        "uvlock": true
+      },
+      "when": {
+        "facing": "east",
+        "front": "true",
+        "corner": "none"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_jungle_log_counter_corner_left",
+        "y": 90,
+        "uvlock": true
+      },
+      "when": {
+        "facing": "east",
+        "corner": "left"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_jungle_log_counter_corner_right",
+        "y": 90,
+        "uvlock": true
+      },
+      "when": {
+        "facing": "east",
+        "corner": "right"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_jungle_log_counter_corner_both",
+        "y": 90,
+        "uvlock": true
+      },
+      "when": {
+        "facing": "east",
+        "corner": "both"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_jungle_log_counter_filler_left",
+        "y": 90,
+        "uvlock": true
+      },
+      "when": {
+        "facing": "east",
+        "front": "false",
+        "corner": "none",
+        "left": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_jungle_log_counter_filler_left_front",
+        "y": 90,
+        "uvlock": true
+      },
+      "when": {
+        "facing": "east",
+        "front": "true",
+        "corner": "none",
+        "left": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_jungle_log_counter_filler_right",
+        "y": 90,
+        "uvlock": true
+      },
+      "when": {
+        "facing": "east",
+        "front": "false",
+        "corner": "none",
+        "right": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_jungle_log_counter_filler_right_front",
+        "y": 90,
+        "uvlock": true
+      },
+      "when": {
+        "facing": "east",
+        "front": "true",
+        "corner": "none",
+        "right": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_jungle_log_counter",
+        "y": 180,
+        "uvlock": true
+      },
+      "when": {
+        "facing": "south",
+        "front": "false",
+        "corner": "none"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_jungle_log_counter_front",
+        "y": 180,
+        "uvlock": true
+      },
+      "when": {
+        "facing": "south",
+        "front": "true",
+        "corner": "none"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_jungle_log_counter_corner_left",
+        "y": 180,
+        "uvlock": true
+      },
+      "when": {
+        "facing": "south",
+        "corner": "left"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_jungle_log_counter_corner_right",
+        "y": 180,
+        "uvlock": true
+      },
+      "when": {
+        "facing": "south",
+        "corner": "right"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_jungle_log_counter_corner_both",
+        "y": 180,
+        "uvlock": true
+      },
+      "when": {
+        "facing": "south",
+        "corner": "both"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_jungle_log_counter_filler_left",
+        "y": 180,
+        "uvlock": true
+      },
+      "when": {
+        "facing": "south",
+        "front": "false",
+        "corner": "none",
+        "left": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_jungle_log_counter_filler_left_front",
+        "y": 180,
+        "uvlock": true
+      },
+      "when": {
+        "facing": "south",
+        "front": "true",
+        "corner": "none",
+        "left": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_jungle_log_counter_filler_right",
+        "y": 180,
+        "uvlock": true
+      },
+      "when": {
+        "facing": "south",
+        "front": "false",
+        "corner": "none",
+        "right": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_jungle_log_counter_filler_right_front",
+        "y": 180,
+        "uvlock": true
+      },
+      "when": {
+        "facing": "south",
+        "front": "true",
+        "corner": "none",
+        "right": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_jungle_log_counter",
+        "y": 270,
+        "uvlock": true
+      },
+      "when": {
+        "facing": "west",
+        "front": "false",
+        "corner": "none"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_jungle_log_counter_front",
+        "y": 270,
+        "uvlock": true
+      },
+      "when": {
+        "facing": "west",
+        "front": "true",
+        "corner": "none"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_jungle_log_counter_corner_left",
+        "y": 270,
+        "uvlock": true
+      },
+      "when": {
+        "facing": "west",
+        "corner": "left"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_jungle_log_counter_corner_right",
+        "y": 270,
+        "uvlock": true
+      },
+      "when": {
+        "facing": "west",
+        "corner": "right"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_jungle_log_counter_corner_both",
+        "y": 270,
+        "uvlock": true
+      },
+      "when": {
+        "facing": "west",
+        "corner": "both"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_jungle_log_counter_filler_left",
+        "y": 270,
+        "uvlock": true
+      },
+      "when": {
+        "facing": "west",
+        "front": "false",
+        "corner": "none",
+        "left": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_jungle_log_counter_filler_left_front",
+        "y": 270,
+        "uvlock": true
+      },
+      "when": {
+        "facing": "west",
+        "front": "true",
+        "corner": "none",
+        "left": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_jungle_log_counter_filler_right",
+        "y": 270,
+        "uvlock": true
+      },
+      "when": {
+        "facing": "west",
+        "front": "false",
+        "corner": "none",
+        "right": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_jungle_log_counter_filler_right_front",
+        "y": 270,
+        "uvlock": true
+      },
+      "when": {
+        "facing": "west",
+        "front": "true",
+        "corner": "none",
+        "right": "true"
+      }
+    }
+  ]
+}

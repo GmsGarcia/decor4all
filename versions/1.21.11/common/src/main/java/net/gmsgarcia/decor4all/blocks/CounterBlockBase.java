@@ -102,10 +102,30 @@ public abstract class CounterBlockBase extends WaterloggedFacingBlock {
         return shapeFor(state);
     }
 
+    protected CounterCorner cornerKind(BlockState state) {
+        return CounterCorner.NONE;
+    }
+
     protected VoxelShape shapeFor(BlockState state) {
         Direction facing = state.getValue(FACING);
         boolean left = state.getValue(LEFT);
         boolean right = state.getValue(RIGHT);
+        boolean joinsFront = joinsInFront(state);
+
+        double baseHeight = joinsFront ? 13.0D : 12.0D;
+        double topMinY = joinsFront ? 13.0D : 12.0D;
+        VoxelShape top = Block.box(0.0D, topMinY, 0.0D, 16.0D, 16.0D, 16.0D);
+
+        switch (cornerKind(state)) {
+            case LEFT:
+                return Shapes.or(cornerBase(facing, facing.getClockWise(), baseHeight), top);
+            case RIGHT:
+                return Shapes.or(cornerBase(facing, facing.getCounterClockWise(), baseHeight), top);
+            case BOTH:
+                return Shapes.or(cornerBothBase(facing, baseHeight), top);
+            case NONE:
+                break;
+        }
 
         double minX, maxX, minZ, maxZ;
         switch (facing) {
@@ -130,7 +150,10 @@ public abstract class CounterBlockBase extends WaterloggedFacingBlock {
                 minZ = 1.0D; maxZ = 16.0D;
         }
 
-        if (joinsInFront(state)) {
+        Direction leftDir = facing.getClockWise();
+        Direction rightDir = facing.getCounterClockWise();
+
+        if (joinsFront) {
             switch (facing) {
                 case NORTH:
                     minZ = 0.0D;
@@ -149,9 +172,6 @@ public abstract class CounterBlockBase extends WaterloggedFacingBlock {
             }
         }
 
-        Direction leftDir = facing.getClockWise();
-        Direction rightDir = facing.getCounterClockWise();
-
         if (left) {
             if (leftDir.getAxis() == Direction.Axis.X) {
                 if (leftDir == Direction.EAST) maxX = 16.0D; else minX = 0.0D;
@@ -167,8 +187,88 @@ public abstract class CounterBlockBase extends WaterloggedFacingBlock {
             }
         }
 
+        return Shapes.or(Block.box(minX, 0.0D, minZ, maxX, baseHeight, maxZ), top);
+    }
+
+    private static VoxelShape cornerBase(Direction facing, Direction side, double baseHeight) {
+        boolean alongX = facing.getAxis() == Direction.Axis.X;
+        boolean frontPositive = facing.getAxisDirection() == Direction.AxisDirection.POSITIVE;
+        boolean sidePositive = side.getAxisDirection() == Direction.AxisDirection.POSITIVE;
+
+        double backMin = frontPositive ? 0.0D : 1.0D;
+        double backMax = frontPositive ? 15.0D : 16.0D;
+        double frontMin = frontPositive ? 15.0D : 0.0D;
+        double frontMax = frontPositive ? 16.0D : 1.0D;
+        double nearMin = sidePositive ? 0.0D : 1.0D;
+        double nearMax = sidePositive ? 15.0D : 16.0D;
+
+        if (alongX) {
+            return Shapes.or(
+                    Block.box(backMin, 0.0D, 0.0D, backMax, baseHeight, 16.0D),
+                    Block.box(frontMin, 0.0D, nearMin, frontMax, baseHeight, nearMax));
+        }
         return Shapes.or(
-                Block.box(minX, 0.0D, minZ, maxX, 13.0D, maxZ),
-                Block.box(0.0D, 13.0D, 0.0D, 16.0D, 16.0D, 16.0D));
+                Block.box(0.0D, 0.0D, backMin, 16.0D, baseHeight, backMax),
+                Block.box(nearMin, 0.0D, frontMin, nearMax, baseHeight, frontMax));
+    }
+
+    private static VoxelShape cornerBothBase(Direction facing, double baseHeight) {
+        boolean alongX = facing.getAxis() == Direction.Axis.X;
+        boolean frontPositive = facing.getAxisDirection() == Direction.AxisDirection.POSITIVE;
+
+        double backMin = frontPositive ? 0.0D : 1.0D;
+        double backMax = frontPositive ? 15.0D : 16.0D;
+        double frontMin = frontPositive ? 15.0D : 0.0D;
+        double frontMax = frontPositive ? 16.0D : 1.0D;
+
+        if (alongX) {
+            return Shapes.or(
+                    Block.box(backMin, 0.0D, 0.0D, backMax, baseHeight, 16.0D),
+                    Block.box(frontMin, 0.0D, 1.0D, frontMax, baseHeight, 15.0D));
+        }
+        return Shapes.or(
+                Block.box(0.0D, 0.0D, backMin, 16.0D, baseHeight, backMax),
+                Block.box(1.0D, 0.0D, frontMin, 15.0D, baseHeight, frontMax));
+    }
+
+    private static VoxelShape cornerBase(Direction facing, Direction side) {
+        boolean alongX = facing.getAxis() == Direction.Axis.X;
+        boolean frontPositive = facing.getAxisDirection() == Direction.AxisDirection.POSITIVE;
+        boolean sidePositive = side.getAxisDirection() == Direction.AxisDirection.POSITIVE;
+
+        double backMin = frontPositive ? 0.0D : 1.0D;
+        double backMax = frontPositive ? 15.0D : 16.0D;
+        double frontMin = frontPositive ? 15.0D : 0.0D;
+        double frontMax = frontPositive ? 16.0D : 1.0D;
+        double nearMin = sidePositive ? 0.0D : 1.0D;
+        double nearMax = sidePositive ? 15.0D : 16.0D;
+
+        if (alongX) {
+            return Shapes.or(
+                    Block.box(backMin, 0.0D, 0.0D, backMax, 13.0D, 16.0D),
+                    Block.box(frontMin, 0.0D, nearMin, frontMax, 13.0D, nearMax));
+        }
+        return Shapes.or(
+                Block.box(0.0D, 0.0D, backMin, 16.0D, 13.0D, backMax),
+                Block.box(nearMin, 0.0D, frontMin, nearMax, 13.0D, frontMax));
+    }
+
+    private static VoxelShape cornerBothBase(Direction facing) {
+        boolean alongX = facing.getAxis() == Direction.Axis.X;
+        boolean frontPositive = facing.getAxisDirection() == Direction.AxisDirection.POSITIVE;
+
+        double backMin = frontPositive ? 0.0D : 1.0D;
+        double backMax = frontPositive ? 15.0D : 16.0D;
+        double frontMin = frontPositive ? 15.0D : 0.0D;
+        double frontMax = frontPositive ? 16.0D : 1.0D;
+
+        if (alongX) {
+            return Shapes.or(
+                    Block.box(backMin, 0.0D, 0.0D, backMax, 13.0D, 16.0D),
+                    Block.box(frontMin, 0.0D, 1.0D, frontMax, 13.0D, 15.0D));
+        }
+        return Shapes.or(
+                Block.box(0.0D, 0.0D, backMin, 16.0D, 13.0D, backMax),
+                Block.box(1.0D, 0.0D, frontMin, 15.0D, 13.0D, frontMax));
     }
 }
