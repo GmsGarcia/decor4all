@@ -2,8 +2,7 @@
   "multipart": [
     {
       "apply": {
-        "model": "decor4all:block/pale_oak_log_counter",
-        "uvlock": true
+        "model": "decor4all:block/pale_oak_log_counter"
       },
       "when": {
         "facing": "north",
@@ -13,8 +12,7 @@
     },
     {
       "apply": {
-        "model": "decor4all:block/pale_oak_log_counter_front",
-        "uvlock": true
+        "model": "decor4all:block/pale_oak_log_counter_front"
       },
       "when": {
         "facing": "north",
@@ -24,8 +22,7 @@
     },
     {
       "apply": {
-        "model": "decor4all:block/pale_oak_log_counter_corner_left",
-        "uvlock": true
+        "model": "decor4all:block/pale_oak_log_counter_corner_left"
       },
       "when": {
         "facing": "north",
@@ -34,8 +31,7 @@
     },
     {
       "apply": {
-        "model": "decor4all:block/pale_oak_log_counter_corner_right",
-        "uvlock": true
+        "model": "decor4all:block/pale_oak_log_counter_corner_right"
       },
       "when": {
         "facing": "north",
@@ -44,8 +40,7 @@
     },
     {
       "apply": {
-        "model": "decor4all:block/pale_oak_log_counter_corner_both",
-        "uvlock": true
+        "model": "decor4all:block/pale_oak_log_counter_corner_both"
       },
       "when": {
         "facing": "north",
@@ -54,8 +49,7 @@
     },
     {
       "apply": {
-        "model": "decor4all:block/pale_oak_log_counter_filler_left",
-        "uvlock": true
+        "model": "decor4all:block/pale_oak_log_counter_filler_left"
       },
       "when": {
         "facing": "north",
@@ -66,8 +60,7 @@
     },
     {
       "apply": {
-        "model": "decor4all:block/pale_oak_log_counter_filler_left_front",
-        "uvlock": true
+        "model": "decor4all:block/pale_oak_log_counter_filler_left_front"
       },
       "when": {
         "facing": "north",
@@ -78,8 +71,7 @@
     },
     {
       "apply": {
-        "model": "decor4all:block/pale_oak_log_counter_filler_right",
-        "uvlock": true
+        "model": "decor4all:block/pale_oak_log_counter_filler_right"
       },
       "when": {
         "facing": "north",
@@ -90,8 +82,7 @@
     },
     {
       "apply": {
-        "model": "decor4all:block/pale_oak_log_counter_filler_right_front",
-        "uvlock": true
+        "model": "decor4all:block/pale_oak_log_counter_filler_right_front"
       },
       "when": {
         "facing": "north",
@@ -103,8 +94,7 @@
     {
       "apply": {
         "model": "decor4all:block/pale_oak_log_counter",
-        "y": 90,
-        "uvlock": true
+        "y": 90
       },
       "when": {
         "facing": "east",
@@ -115,8 +105,7 @@
     {
       "apply": {
         "model": "decor4all:block/pale_oak_log_counter_front",
-        "y": 90,
-        "uvlock": true
+        "y": 90
       },
       "when": {
         "facing": "east",
@@ -127,8 +116,7 @@
     {
       "apply": {
         "model": "decor4all:block/pale_oak_log_counter_corner_left",
-        "y": 90,
-        "uvlock": true
+        "y": 90
       },
       "when": {
         "facing": "east",
@@ -138,8 +126,7 @@
     {
       "apply": {
         "model": "decor4all:block/pale_oak_log_counter_corner_right",
-        "y": 90,
-        "uvlock": true
+        "y": 90
       },
       "when": {
         "facing": "east",
@@ -149,8 +136,7 @@
     {
       "apply": {
         "model": "decor4all:block/pale_oak_log_counter_corner_both",
-        "y": 90,
-        "uvlock": true
+        "y": 90
       },
       "when": {
         "facing": "east",
@@ -160,8 +146,7 @@
     {
       "apply": {
         "model": "decor4all:block/pale_oak_log_counter_filler_left",
-        "y": 90,
-        "uvlock": true
+        "y": 90
       },
       "when": {
         "facing": "east",
@@ -173,8 +158,7 @@
     {
       "apply": {
         "model": "decor4all:block/pale_oak_log_counter_filler_left_front",
-        "y": 90,
-        "uvlock": true
+        "y": 90
       },
       "when": {
         "facing": "east",
@@ -186,8 +170,7 @@
     {
       "apply": {
         "model": "decor4all:block/pale_oak_log_counter_filler_right",
-        "y": 90,
-        "uvlock": true
+        "y": 90
       },
       "when": {
         "facing": "east",
@@ -199,8 +182,7 @@
     {
       "apply": {
         "model": "decor4all:block/pale_oak_log_counter_filler_right_front",
-        "y": 90,
-        "uvlock": true
+        "y": 90
       },
       "when": {
         "facing": "east",
@@ -212,8 +194,7 @@
     {
       "apply": {
         "model": "decor4all:block/pale_oak_log_counter",
-        "y": 180,
-        "uvlock": true
+        "y": 180
       },
       "when": {
         "facing": "south",
@@ -224,8 +205,7 @@
     {
       "apply": {
         "model": "decor4all:block/pale_oak_log_counter_front",
-        "y": 180,
-        "uvlock": true
+        "y": 180
       },
       "when": {
         "facing": "south",
@@ -236,8 +216,7 @@
     {
       "apply": {
         "model": "decor4all:block/pale_oak_log_counter_corner_left",
-        "y": 180,
-        "uvlock": true
+        "y": 180
       },
       "when": {
         "facing": "south",
@@ -247,8 +226,7 @@
     {
       "apply": {
         "model": "decor4all:block/pale_oak_log_counter_corner_right",
-        "y": 180,
-        "uvlock": true
+        "y": 180
       },
       "when": {
         "facing": "south",
@@ -258,8 +236,7 @@
     {
       "apply": {
         "model": "decor4all:block/pale_oak_log_counter_corner_both",
-        "y": 180,
-        "uvlock": true
+        "y": 180
       },
       "when": {
         "facing": "south",
@@ -269,8 +246,7 @@
     {
       "apply": {
         "model": "decor4all:block/pale_oak_log_counter_filler_left",
-        "y": 180,
-        "uvlock": true
+        "y": 180
       },
       "when": {
         "facing": "south",
@@ -282,8 +258,7 @@
     {
       "apply": {
         "model": "decor4all:block/pale_oak_log_counter_filler_left_front",
-        "y": 180,
-        "uvlock": true
+        "y": 180
       },
       "when": {
         "facing": "south",
@@ -295,8 +270,7 @@
     {
       "apply": {
         "model": "decor4all:block/pale_oak_log_counter_filler_right",
-        "y": 180,
-        "uvlock": true
+        "y": 180
       },
       "when": {
         "facing": "south",
@@ -308,8 +282,7 @@
     {
       "apply": {
         "model": "decor4all:block/pale_oak_log_counter_filler_right_front",
-        "y": 180,
-        "uvlock": true
+        "y": 180
       },
       "when": {
         "facing": "south",
@@ -321,8 +294,7 @@
     {
       "apply": {
         "model": "decor4all:block/pale_oak_log_counter",
-        "y": 270,
-        "uvlock": true
+        "y": 270
       },
       "when": {
         "facing": "west",
@@ -333,8 +305,7 @@
     {
       "apply": {
         "model": "decor4all:block/pale_oak_log_counter_front",
-        "y": 270,
-        "uvlock": true
+        "y": 270
       },
       "when": {
         "facing": "west",
@@ -345,8 +316,7 @@
     {
       "apply": {
         "model": "decor4all:block/pale_oak_log_counter_corner_left",
-        "y": 270,
-        "uvlock": true
+        "y": 270
       },
       "when": {
         "facing": "west",
@@ -356,8 +326,7 @@
     {
       "apply": {
         "model": "decor4all:block/pale_oak_log_counter_corner_right",
-        "y": 270,
-        "uvlock": true
+        "y": 270
       },
       "when": {
         "facing": "west",
@@ -367,8 +336,7 @@
     {
       "apply": {
         "model": "decor4all:block/pale_oak_log_counter_corner_both",
-        "y": 270,
-        "uvlock": true
+        "y": 270
       },
       "when": {
         "facing": "west",
@@ -378,8 +346,7 @@
     {
       "apply": {
         "model": "decor4all:block/pale_oak_log_counter_filler_left",
-        "y": 270,
-        "uvlock": true
+        "y": 270
       },
       "when": {
         "facing": "west",
@@ -391,8 +358,7 @@
     {
       "apply": {
         "model": "decor4all:block/pale_oak_log_counter_filler_left_front",
-        "y": 270,
-        "uvlock": true
+        "y": 270
       },
       "when": {
         "facing": "west",
@@ -404,8 +370,7 @@
     {
       "apply": {
         "model": "decor4all:block/pale_oak_log_counter_filler_right",
-        "y": 270,
-        "uvlock": true
+        "y": 270
       },
       "when": {
         "facing": "west",
@@ -417,8 +382,7 @@
     {
       "apply": {
         "model": "decor4all:block/pale_oak_log_counter_filler_right_front",
-        "y": 270,
-        "uvlock": true
+        "y": 270
       },
       "when": {
         "facing": "west",

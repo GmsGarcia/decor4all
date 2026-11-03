@@ -1,6 +1,5 @@
 # todo list:
 
-- fix drawers and cabinet door uv on the left side
 - make tables connect with counters
 
 - create top cabinets models
