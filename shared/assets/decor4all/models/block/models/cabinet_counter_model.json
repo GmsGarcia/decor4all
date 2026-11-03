@@ -41,7 +41,7 @@
 				"east": {"uv": [0, 0, 1, 12], "texture": "#log"},
 				"west": {"uv": [1, 0, 2, 12], "texture": "#log"},
 				"up": {"uv": [0, 1, 9, 2], "texture": "#log"},
-				"down": {"uv": [0, 0, 9, 1], "texture": "#log", "cullface": "down"}
+				"down": {"uv": [0, 0, 9, 1], "texture": "#log"}
 			}
 		}
 	],
