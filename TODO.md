@@ -1,5 +1,5 @@
 # todo list:
-
+- fix counter top uvs not matching tables uvs
 - make tables connect with counters
 
 - create top cabinets models
