@@ -2,7 +2,8 @@
   "multipart": [
     {
       "apply": {
-        "model": "decor4all:block/spruce_log_counter"
+        "model": "decor4all:block/spruce_log_counter",
+        "uvlock": true
       },
       "when": {
         "facing": "north",
@@ -12,7 +13,8 @@
     },
     {
       "apply": {
-        "model": "decor4all:block/spruce_log_counter_front"
+        "model": "decor4all:block/spruce_log_counter_front",
+        "uvlock": true
       },
       "when": {
         "facing": "north",
@@ -22,7 +24,8 @@
     },
     {
       "apply": {
-        "model": "decor4all:block/spruce_log_counter_corner_left"
+        "model": "decor4all:block/spruce_log_counter_corner_left",
+        "uvlock": true
       },
       "when": {
         "facing": "north",
@@ -31,7 +34,8 @@
     },
     {
       "apply": {
-        "model": "decor4all:block/spruce_log_counter_corner_right"
+        "model": "decor4all:block/spruce_log_counter_corner_right",
+        "uvlock": true
       },
       "when": {
         "facing": "north",
@@ -40,7 +44,8 @@
     },
     {
       "apply": {
-        "model": "decor4all:block/spruce_log_counter_corner_both"
+        "model": "decor4all:block/spruce_log_counter_corner_both",
+        "uvlock": true
       },
       "when": {
         "facing": "north",
@@ -49,7 +54,8 @@
     },
     {
       "apply": {
-        "model": "decor4all:block/spruce_log_counter_filler_left"
+        "model": "decor4all:block/spruce_log_counter_filler_left",
+        "uvlock": true
       },
       "when": {
         "facing": "north",
@@ -60,7 +66,8 @@
     },
     {
       "apply": {
-        "model": "decor4all:block/spruce_log_counter_filler_left_front"
+        "model": "decor4all:block/spruce_log_counter_filler_left_front",
+        "uvlock": true
       },
       "when": {
         "facing": "north",
@@ -71,7 +78,8 @@
     },
     {
       "apply": {
-        "model": "decor4all:block/spruce_log_counter_filler_right"
+        "model": "decor4all:block/spruce_log_counter_filler_right",
+        "uvlock": true
       },
       "when": {
         "facing": "north",
@@ -82,7 +90,8 @@
     },
     {
       "apply": {
-        "model": "decor4all:block/spruce_log_counter_filler_right_front"
+        "model": "decor4all:block/spruce_log_counter_filler_right_front",
+        "uvlock": true
       },
       "when": {
         "facing": "north",
@@ -94,7 +103,8 @@
     {
       "apply": {
         "model": "decor4all:block/spruce_log_counter",
-        "y": 90
+        "y": 90,
+        "uvlock": true
       },
       "when": {
         "facing": "east",
@@ -105,7 +115,8 @@
     {
       "apply": {
         "model": "decor4all:block/spruce_log_counter_front",
-        "y": 90
+        "y": 90,
+        "uvlock": true
       },
       "when": {
         "facing": "east",
@@ -116,7 +127,8 @@
     {
       "apply": {
         "model": "decor4all:block/spruce_log_counter_corner_left",
-        "y": 90
+        "y": 90,
+        "uvlock": true
       },
       "when": {
         "facing": "east",
@@ -126,7 +138,8 @@
     {
       "apply": {
         "model": "decor4all:block/spruce_log_counter_corner_right",
-        "y": 90
+        "y": 90,
+        "uvlock": true
       },
       "when": {
         "facing": "east",
@@ -136,7 +149,8 @@
     {
       "apply": {
         "model": "decor4all:block/spruce_log_counter_corner_both",
-        "y": 90
+        "y": 90,
+        "uvlock": true
       },
       "when": {
         "facing": "east",
@@ -146,7 +160,8 @@
     {
       "apply": {
         "model": "decor4all:block/spruce_log_counter_filler_left",
-        "y": 90
+        "y": 90,
+        "uvlock": true
       },
       "when": {
         "facing": "east",
@@ -158,7 +173,8 @@
     {
       "apply": {
         "model": "decor4all:block/spruce_log_counter_filler_left_front",
-        "y": 90
+        "y": 90,
+        "uvlock": true
       },
       "when": {
         "facing": "east",
@@ -170,7 +186,8 @@
     {
       "apply": {
         "model": "decor4all:block/spruce_log_counter_filler_right",
-        "y": 90
+        "y": 90,
+        "uvlock": true
       },
       "when": {
         "facing": "east",
@@ -182,7 +199,8 @@
     {
       "apply": {
         "model": "decor4all:block/spruce_log_counter_filler_right_front",
-        "y": 90
+        "y": 90,
+        "uvlock": true
       },
       "when": {
         "facing": "east",
@@ -194,7 +212,8 @@
     {
       "apply": {
         "model": "decor4all:block/spruce_log_counter",
-        "y": 180
+        "y": 180,
+        "uvlock": true
       },
       "when": {
         "facing": "south",
@@ -205,7 +224,8 @@
     {
       "apply": {
         "model": "decor4all:block/spruce_log_counter_front",
-        "y": 180
+        "y": 180,
+        "uvlock": true
       },
       "when": {
         "facing": "south",
@@ -216,7 +236,8 @@
     {
       "apply": {
         "model": "decor4all:block/spruce_log_counter_corner_left",
-        "y": 180
+        "y": 180,
+        "uvlock": true
       },
       "when": {
         "facing": "south",
@@ -226,7 +247,8 @@
     {
       "apply": {
         "model": "decor4all:block/spruce_log_counter_corner_right",
-        "y": 180
+        "y": 180,
+        "uvlock": true
       },
       "when": {
         "facing": "south",
@@ -236,7 +258,8 @@
     {
       "apply": {
         "model": "decor4all:block/spruce_log_counter_corner_both",
-        "y": 180
+        "y": 180,
+        "uvlock": true
       },
       "when": {
         "facing": "south",
@@ -246,7 +269,8 @@
     {
       "apply": {
         "model": "decor4all:block/spruce_log_counter_filler_left",
-        "y": 180
+        "y": 180,
+        "uvlock": true
       },
       "when": {
         "facing": "south",
@@ -258,7 +282,8 @@
     {
       "apply": {
         "model": "decor4all:block/spruce_log_counter_filler_left_front",
-        "y": 180
+        "y": 180,
+        "uvlock": true
       },
       "when": {
         "facing": "south",
@@ -270,7 +295,8 @@
     {
       "apply": {
         "model": "decor4all:block/spruce_log_counter_filler_right",
-        "y": 180
+        "y": 180,
+        "uvlock": true
       },
       "when": {
         "facing": "south",
@@ -282,7 +308,8 @@
     {
       "apply": {
         "model": "decor4all:block/spruce_log_counter_filler_right_front",
-        "y": 180
+        "y": 180,
+        "uvlock": true
       },
       "when": {
         "facing": "south",
@@ -294,7 +321,8 @@
     {
       "apply": {
         "model": "decor4all:block/spruce_log_counter",
-        "y": 270
+        "y": 270,
+        "uvlock": true
       },
       "when": {
         "facing": "west",
@@ -305,7 +333,8 @@
     {
       "apply": {
         "model": "decor4all:block/spruce_log_counter_front",
-        "y": 270
+        "y": 270,
+        "uvlock": true
       },
       "when": {
         "facing": "west",
@@ -316,7 +345,8 @@
     {
       "apply": {
         "model": "decor4all:block/spruce_log_counter_corner_left",
-        "y": 270
+        "y": 270,
+        "uvlock": true
       },
       "when": {
         "facing": "west",
@@ -326,7 +356,8 @@
     {
       "apply": {
         "model": "decor4all:block/spruce_log_counter_corner_right",
-        "y": 270
+        "y": 270,
+        "uvlock": true
       },
       "when": {
         "facing": "west",
@@ -336,7 +367,8 @@
     {
       "apply": {
         "model": "decor4all:block/spruce_log_counter_corner_both",
-        "y": 270
+        "y": 270,
+        "uvlock": true
       },
       "when": {
         "facing": "west",
@@ -346,7 +378,8 @@
     {
       "apply": {
         "model": "decor4all:block/spruce_log_counter_filler_left",
-        "y": 270
+        "y": 270,
+        "uvlock": true
       },
       "when": {
         "facing": "west",
@@ -358,7 +391,8 @@
     {
       "apply": {
         "model": "decor4all:block/spruce_log_counter_filler_left_front",
-        "y": 270
+        "y": 270,
+        "uvlock": true
       },
       "when": {
         "facing": "west",
@@ -370,7 +404,8 @@
     {
       "apply": {
         "model": "decor4all:block/spruce_log_counter_filler_right",
-        "y": 270
+        "y": 270,
+        "uvlock": true
       },
       "when": {
         "facing": "west",
@@ -382,7 +417,8 @@
     {
       "apply": {
         "model": "decor4all:block/spruce_log_counter_filler_right_front",
-        "y": 270
+        "y": 270,
+        "uvlock": true
       },
       "when": {
         "facing": "west",

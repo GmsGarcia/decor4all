@@ -2,7 +2,8 @@
   "multipart": [
     {
       "apply": {
-        "model": "decor4all:block/stripped_acacia_log_drawer_counter"
+        "model": "decor4all:block/stripped_acacia_log_drawer_counter_body",
+        "uvlock": true
       },
       "when": {
         "facing": "north"
@@ -10,7 +11,16 @@
     },
     {
       "apply": {
-        "model": "decor4all:block/stripped_acacia_log_drawer_counter_filler_left"
+        "model": "decor4all:block/stripped_acacia_log_drawer_counter_doors"
+      },
+      "when": {
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_acacia_log_drawer_counter_filler_left",
+        "uvlock": true
       },
       "when": {
         "facing": "north",
@@ -19,7 +29,8 @@
     },
     {
       "apply": {
-        "model": "decor4all:block/stripped_acacia_log_drawer_counter_filler_right"
+        "model": "decor4all:block/stripped_acacia_log_drawer_counter_filler_right",
+        "uvlock": true
       },
       "when": {
         "facing": "north",
@@ -28,7 +39,17 @@
     },
     {
       "apply": {
-        "model": "decor4all:block/stripped_acacia_log_drawer_counter",
+        "model": "decor4all:block/stripped_acacia_log_drawer_counter_body",
+        "y": 90,
+        "uvlock": true
+      },
+      "when": {
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_acacia_log_drawer_counter_doors",
         "y": 90
       },
       "when": {
@@ -38,7 +59,8 @@
     {
       "apply": {
         "model": "decor4all:block/stripped_acacia_log_drawer_counter_filler_left",
-        "y": 90
+        "y": 90,
+        "uvlock": true
       },
       "when": {
         "facing": "east",
@@ -48,7 +70,8 @@
     {
       "apply": {
         "model": "decor4all:block/stripped_acacia_log_drawer_counter_filler_right",
-        "y": 90
+        "y": 90,
+        "uvlock": true
       },
       "when": {
         "facing": "east",
@@ -57,7 +80,17 @@
     },
     {
       "apply": {
-        "model": "decor4all:block/stripped_acacia_log_drawer_counter",
+        "model": "decor4all:block/stripped_acacia_log_drawer_counter_body",
+        "y": 180,
+        "uvlock": true
+      },
+      "when": {
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_acacia_log_drawer_counter_doors",
         "y": 180
       },
       "when": {
@@ -67,7 +100,8 @@
     {
       "apply": {
         "model": "decor4all:block/stripped_acacia_log_drawer_counter_filler_left",
-        "y": 180
+        "y": 180,
+        "uvlock": true
       },
       "when": {
         "facing": "south",
@@ -77,7 +111,8 @@
     {
       "apply": {
         "model": "decor4all:block/stripped_acacia_log_drawer_counter_filler_right",
-        "y": 180
+        "y": 180,
+        "uvlock": true
       },
       "when": {
         "facing": "south",
@@ -86,7 +121,17 @@
     },
     {
       "apply": {
-        "model": "decor4all:block/stripped_acacia_log_drawer_counter",
+        "model": "decor4all:block/stripped_acacia_log_drawer_counter_body",
+        "y": 270,
+        "uvlock": true
+      },
+      "when": {
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "decor4all:block/stripped_acacia_log_drawer_counter_doors",
         "y": 270
       },
       "when": {
@@ -96,7 +141,8 @@
     {
       "apply": {
         "model": "decor4all:block/stripped_acacia_log_drawer_counter_filler_left",
-        "y": 270
+        "y": 270,
+        "uvlock": true
       },
       "when": {
         "facing": "west",
@@ -106,7 +152,8 @@
     {
       "apply": {
         "model": "decor4all:block/stripped_acacia_log_drawer_counter_filler_right",
-        "y": 270
+        "y": 270,
+        "uvlock": true
       },
       "when": {
         "facing": "west",

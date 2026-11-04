@@ -175,6 +175,10 @@ final class ModelProvider {
 
         out.put("models/block/" + path + ".json",
                 Json.obj("parent", "decor4all:block/models/drawer_counter_model", "textures", textures));
+        out.put("models/block/" + path + "_body.json",
+                Json.obj("parent", "decor4all:block/models/counter_model_body", "textures", textures));
+        out.put("models/block/" + path + "_doors.json",
+                Json.obj("parent", "decor4all:block/models/drawer_counter_doors", "textures", textures));
         out.put("models/block/" + path + "_filler_left.json",
                 Json.obj("parent", "decor4all:block/models/counter_filler_left", "textures", Json.obj(
                         "stripped_log", facts.otherTexture(),
@@ -201,6 +205,10 @@ final class ModelProvider {
 
         out.put("models/block/" + path + ".json",
                 Json.obj("parent", "decor4all:block/models/cabinet_counter_model", "textures", textures));
+        out.put("models/block/" + path + "_body.json",
+                Json.obj("parent", "decor4all:block/models/counter_model_body", "textures", textures));
+        out.put("models/block/" + path + "_door.json",
+                Json.obj("parent", "decor4all:block/models/cabinet_counter_door", "textures", textures));
         out.put("models/block/" + path + "_filler_left.json",
                 Json.obj("parent", "decor4all:block/models/counter_filler_left", "textures", Json.obj(
                         "stripped_log", facts.otherTexture(),
